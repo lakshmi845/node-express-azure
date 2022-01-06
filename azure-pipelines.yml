@@ -1,6 +1,8 @@
 trigger:
 - master
-
+- task: Npm@1
+  inputs:
+    command: 'install'
 pool:
   vmImage: 'Ubuntu-latest'
 
